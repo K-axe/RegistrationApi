@@ -13,7 +13,6 @@ const ownerSchema = mongoose.Schema(
         },
         country:{
             type:String,
-            required:true,
         },
         city:{
             type:String,
@@ -35,7 +34,10 @@ const ownerSchema = mongoose.Schema(
             unique: true,
             match: [/^\d{10}$/, 'Please enter a valid 10-digit mobile number']
         },
-        profilePic:String,    
+        profilePic:{
+            type:String,
+            required:true
+        },    
     },
     {
       timestamps: true 

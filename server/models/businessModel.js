@@ -17,7 +17,6 @@ const businessSchema = mongoose.Schema(
         },
         city:{
             type:String,
-            required:true,
         },
         address:{
             type:String,
